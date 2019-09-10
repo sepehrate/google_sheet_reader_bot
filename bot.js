@@ -108,14 +108,14 @@ bot.onText(/(.+)$/, function (msg, match) {
         if (itemsFound == 0)
         {
             if (targetTime<0 || targetTime>24)
-                formattedAnswer = "Enter the time to show talks or write 'Hi'.\n\n";
+                formattedAnswer = "آمار چی می خوای بنویس.\n\n";
             else 
-                formattedAnswer = "Can't find events for the given time ( " + targetTime+ " ч)";
+                formattedAnswer = "نداریم که  ( " + targetTime+ " ч)";
                 
             // output current answer
             if (currentAnswer != '')
             {
-                formattedAnswer += "Hi! As of " + currentHours + ":" + currentMinutes + " " + config.confTimeZone+ " these talks are going:\n";
+                formattedAnswer += "جونم برات بگه که  " + currentHours + ":" + currentMinutes + " " + config.confTimeZone+ " آمار مد نظرت به شرح زیر می باشد:\n";
                 formattedAnswer += currentAnswer;
             }
         }
