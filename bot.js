@@ -86,7 +86,7 @@ bot.onText(/(.+)$/, function (msg, match) {
                     if (itemsFound==0) 
                         formattedAnswer += " " + targetTime + " :\n\n";
                     else 
-                        formattedAnswer += "\n\n";
+                        formattedAnswer += "\\n\\n";
                         
                     itemsFound++;
                     formattedAnswer += '' + item.content.$t; // add item content, '\u27a1' is the arrow emoji
