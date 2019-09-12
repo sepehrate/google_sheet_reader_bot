@@ -84,7 +84,7 @@ bot.onText(/(.+)$/, function (msg, match) {
                 {
                     // add the line break if not the first answer
                     if (itemsFound==0) 
-                        formattedAnswer += " " + targetTime + " :\n\n";
+                        formattedAnswer += "خدمتت " + targetTime + " :\n\n";
                     else 
                         formattedAnswer += "\\n\\n";
                         
@@ -96,7 +96,7 @@ bot.onText(/(.+)$/, function (msg, match) {
                     if (currentAnswer == '')
                         currentAnswer == 'Starting from ' + currentHours + " h the following talks are goinf:\n\n";
                     else 
-                        currentAnswer += "\n\n"; 
+                        currentAnswer += "\\n\\n"; 
                         
                     currentAnswer += '' + item.content.$t; // get item content, '\u27a1' is the arrow emoji
                 }
