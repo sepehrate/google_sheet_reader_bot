@@ -89,7 +89,7 @@ bot.onText(/(.+)$/, function (msg, match) {
                         formattedAnswer += "\n\n";
                         
                     itemsFound++;
-                    formattedAnswer += '' + item.content.$t + " \n\n"; // add item content, '\u27a1' is the arrow emoji
+                    formattedAnswer += 'عماد:' + item.gsx$عماد.$t + " \n\n" + 'پوریا:' + item.gsx$پوریا.$t + " \n\n";// add item content, '\u27a1' is the arrow emoji
                 }
                 else if (currentHours == itemTime) // else collect items for the current hour
                 {
