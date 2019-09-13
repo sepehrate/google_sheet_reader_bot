@@ -84,7 +84,7 @@ bot.onText(/(.+)$/, function (msg, match) {
                 {
                     // add the line break if not the first answer
                     if (itemsFound==0) 
-                        formattedAnswer += "به شرح زیر می باشید " + " :\n\n";
+                        formattedAnswer += "به شرح زیر می باشد " + " :\n\n";
                     else 
                         formattedAnswer += "\n\n";
                         
