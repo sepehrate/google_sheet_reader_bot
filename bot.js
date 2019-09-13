@@ -84,12 +84,12 @@ bot.onText(/(.+)$/, function (msg, match) {
                 {
                     // add the line break if not the first answer
                     if (itemsFound==0) 
-                        formattedAnswer += "خدمتت " + " :\n\n";
+                        formattedAnswer += "به شرح زیر می باشید " + " :\n\n";
                     else 
                         formattedAnswer += "\n\n";
                         
                     itemsFound++;
-                    formattedAnswer += 'عماد:' + item.gsx$عماد.$t + " \n\n" + 'پوریا:' + item.gsx$پوریا.$t + " \n\n";// add item content, '\u27a1' is the arrow emoji
+                    formattedAnswer += '\u25E3' + 'عماد:' + item.gsx$عماد.$t + " \n" + '\u25E3' + 'پوریا:' + item.gsx$پوریا.$t + " \n" + '\u25E3' + 'سیاوش:' + item.gsx$سیا.$t + " \n" + '\u25E3' + 'سپهر:' + item.gsx$سپهر.$t + " \n" + '\u25E3' + 'آروین:' + item.gsx$آروین.$t + " \n" + '\u25E3' + 'آرام:' + item.gsx$آرام.$t + " \n";// add item content, '\u27a1' is the arrow emoji
                 }
                 else if (currentHours == itemTime) // else collect items for the current hour
                 {
